@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tip-calculator</title>
+    <link rel="icon" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./main.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img id="logo" src="./assets/logo.svg" />
+    </header>
+    <main>
+      <div class="container">
+        <div class="first-div">
+          <div class="row">
+            <h1>Bill</h1>
+            <div class="eror">Can’t be zero</div>
+          </div>
+          <input id="first" class="input" type="number" placeholder="0" />
+          <div class="percents">
+            <p class="select">Select Tip %</p>
+            <div class="buttons">
+            <button  class= "button percent" onclick="calculator(5)">5%</button>
+            <button  class="button percent"  onclick="calculator(10)">10%</button>
+            <button  class="button percent" onclick="calculator(15)">15%</button>
+            <button  class="button percent" onclick="calculator(25)">25%</button>
+            <button  class="button percent" onclick="calculator(50)">50%</button>
+            <input id="custom"  placeholder="Custom">
+            </div>
+          </div>
+          <div class="number-people">
+            <p class="number">Number of People</p>
+            <div class="second-eror">Can’t be zero</div>
+            <br />
+            <input id="second" class="input" type="number" placeholder="0" />
+          </div>
+        </div>
+        <div class="calculator">
+          <div class="last">
+            <div class="tip">
+              <h4>Tip Amounts <br /><span>/ person </span></h4>
+              <div class="first-amount">$0.00</div>
+            </div>
+            <div class="total">
+              <h4>Total <br /><span>/ person</span></h4>
+              <div class="amount">$0.00</div>
+            </div>
+          </div>
+          <form>
+            <button type="button" id="reset" >
+              Reset
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

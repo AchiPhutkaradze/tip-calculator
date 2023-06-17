@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+body {
+  background-color: #c5e4e7;
+  font-family: "Space Mono";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.container {
+  height: 789px;
+  width: 375px;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+  margin-top: 40px;
+}
+.input {
+  margin-top: 6px;
+  width: 311px;
+  height: 30px;
+  text-align: right;
+  border: none;
+  background-color: #f3f9fa;
+}
+.first-div {
+  padding: 32px;
+}
+#first {
+  background-image: url(./assets/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+h1 {
+  color: #5e7a7d;
+}
+.select {
+  color: #5e7a7d;
+}
+.number {
+  color: #5e7a7d;
+}
+.percents {
+  width: 311px;
+  height: 216px;
+  margin-top: 32px;
+}
+button {
+  width: 147px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #00474b;
+  border: none;
+}
+
+.button {
+  color: white;
+  font-size: 24px;
+  line-height: 35.54px;
+  font-weight: 700;
+  font-family: Space monospace;
+  cursor: pointer;
+}
+#custom {
+  background-color: #f3f9fa;
+}
+.buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+#custom {
+  color: #547878;
+  font-size: 24px;
+  line-height: 35.54px;
+  font-weight: 700;
+  width: 140px;
+  height: 35px;
+  border-radius: 5px;
+}
+#second {
+  background-image: url(./assets/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+.calculator {
+  height: 257px;
+  width: 327px;
+  background-color: #00474b;
+  border-radius: 15px;
+  margin: 0 24px 32px 24px;
+}
+h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: pre;
+}
+.last {
+  padding: 37px 22px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+span {
+  color: #7f9d9f;
+  font-size: 13px;
+  line-height: 23.7px;
+}
+.tip {
+  display: flex;
+  gap: 65px;
+}
+.amount {
+  color: #26c2ae;
+  text-align: right;
+  font-size: 32px;
+  line-height: 47.39px;
+}
+.total {
+  gap: 119px;
+  display: flex;
+}
+#reset {
+  background-color: #26c2ae;
+  width: 281px;
+  margin-left: 24px;
+}
+.into {
+  font-size: 20px;
+  line-height: 29.62px;
+  font-family: "Space Mono";
+}
+.row {
+  display: flex;
+  gap: 144px;
+}
+.eror {
+  color: red;
+  font-size: 16px;
+  display: none;
+}
+.number-people {
+  display: flex;
+  flex-wrap: wrap;
+}
+.second-eror {
+  color: red;
+  margin-left: 27px;
+  display: none;
+}
+.first-amount {
+  color: #26c2ae;
+  text-align: right;
+  font-size: 32px;
+  line-height: 47.39px;
+}
+input {
+  font-family: "Space Mono";
+  font-size: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    display: flex;
+    width: 920px;
+    height: 481px;
+  }
+  .calculator {
+    width: 413px;
+    height: 417px;
+    margin: 32px 32px 32px 32px;
+  }
+  .first-div {
+    padding: 45px 0 48px 48px;
+  }
+  .last {
+    padding: 40px 40px 122px 40px;
+  }
+  #reset {
+    width: 333px;
+    height: 48px;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  .input {
+    width: 379px;
+    height: 48px;
+  }
+  button:hover {
+    background: #9fe8df;
+    color: #547878;
+  }
+}
